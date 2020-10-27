@@ -1,0 +1,15 @@
+insert into user values (1,'成吉思汗');
+insert into user values (2,'鲁班七号');
+insert into user values (3,'太乙真人');
+insert into user values (4,'钟无艳');
+insert into user values (5,'花木兰');
+insert into user values (6,'雅典娜');
+insert into user values (7,'芈月');
+insert into user values (8,'白起');
+insert into user values (9,'刘禅');
+insert into user values (10,'庄周');
+insert into user values (11,'马超');
+insert into user values (12,'刘备');
+insert into user values (13,'哪吒');
+insert into user values (14,'大乔');
+insert into user values (15,'蔡文姬');
