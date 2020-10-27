@@ -26,6 +26,6 @@ public class UserControllerTest {
     public void should_get_user_list_test() throws Exception {
         mockMvc.perform(get("/users"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)));
+                .andExpect(jsonPath("$", hasSize(15)));
     }
 }
