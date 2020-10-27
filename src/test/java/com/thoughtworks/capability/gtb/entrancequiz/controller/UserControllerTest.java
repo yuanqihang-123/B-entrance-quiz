@@ -28,4 +28,10 @@ public class UserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(15)));
     }
+
+    @Test
+    public void should_get_user_list_split_test() throws Exception {
+        mockMvc.perform(get("/users/split"))
+                .andExpect(status().isOk());
+    }
 }
