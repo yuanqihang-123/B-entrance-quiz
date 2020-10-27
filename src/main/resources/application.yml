@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:quiz1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    username: root
+    password: 123456
+    driverClassName: org.h2.Driver
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sq
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
