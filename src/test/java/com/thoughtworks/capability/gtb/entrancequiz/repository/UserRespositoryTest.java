@@ -19,9 +19,10 @@ class UserRespositoryTest {
     UserRespository userRespository;
 
     @Test
-    public void show_get_user_list(){
+    public void should_get_user_list(){
         List<User> users = userRespository.findAll();
         assertEquals(15, users.size());
         assertEquals("成吉思汗", users.get(0).getName());
     }
+
 }
