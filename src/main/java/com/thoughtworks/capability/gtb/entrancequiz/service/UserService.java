@@ -1,11 +1,11 @@
 package com.thoughtworks.capability.gtb.entrancequiz.service;
-
+//TODO GTB-工程实践: - UserService.java:2 无用的import需要删除
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.thoughtworks.capability.gtb.entrancequiz.entity.User;
 import com.thoughtworks.capability.gtb.entrancequiz.repository.UserRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+//TODO GTB-工程实践: - UserService.java:8 这个不删除，会导致编译错误
 import javax.jws.soap.SOAPBinding;
 import java.util.*;
 
@@ -18,6 +18,7 @@ public class UserService {
         return userRespository.findAll();
     }
 
+    //TODO GTB-工程实践: - UserService.java:21 重复代码（hard code）过多，需要重构
     public Map<String, List<User>> getUsersRandomList() {
         Random random = new Random();
         List<User> users = userRespository.findAll();
@@ -28,6 +29,9 @@ public class UserService {
         LinkedList<User> ls4 = new LinkedList<>();
         LinkedList<User> ls5 = new LinkedList<>();
         LinkedList<User> ls6 = new LinkedList<>();
+        //TODO GTB-工程实践: - UserService.java:31 拼写错误
+        //TODO GTB-工程实践: - UserService.java:32 命名不表意
+        //TODO GTB-工程实践: - UserService.java:33 magic number 6
         int cicle = users.size()/6;
         for (int i = 0; i < cicle; i++) {
             ls1.add(users.remove(random.nextInt(users.size())));
